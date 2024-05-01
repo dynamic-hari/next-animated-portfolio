@@ -4,7 +4,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import NavBar from "./NavBar";
 
-const TransitionProvider = ({ children }: any) => {
+const TransitionProvider = ({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) => {
   const pathName = usePathname();
 
   return (

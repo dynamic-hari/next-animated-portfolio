@@ -19,7 +19,7 @@ const ContactPage = () => {
       .sendForm(
         process.env.NEXT_PUBLIC_SERVICE_ID as string,
         process.env.NEXT_PUBLIC_TEMPLATE_ID as string,
-        formRef?.current,
+        formRef.current,
         process.env.NEXT_PUBLIC_PUBLIC_KEY as string
       )
       .then(
@@ -68,7 +68,7 @@ const ContactPage = () => {
           onSubmit={sendEmail}
           className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl flex flex-col gap-8 justify-center p-24"
         >
-          <span>Dear Lama Dev,</span>
+          <span>Dear Hari Haran,</span>
           <textarea
             rows={6}
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
