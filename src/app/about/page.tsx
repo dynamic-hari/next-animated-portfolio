@@ -4,6 +4,7 @@ import { motion, useInView, useScroll } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 import { skillsList } from "../../data/data";
+import Link from "next/link";
 
 const AboutPage = () => {
   const containerRef = useRef(null);
@@ -34,6 +35,18 @@ const AboutPage = () => {
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY IMAGE */}
             <Image src="/biography.jpg" alt="" width={240} height={240} />
+            {/* Resume */}
+            <Link
+              href="/HariHaran_Resume.pdf"
+              target="_blank"
+              locale={false}
+              rel="noopener noreferrer"
+              download
+            >
+              <p className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">
+                Download Resume
+              </p>
+            </Link>
             {/* BIOGRAPHY TITLE */}
             <h1 className="font-bold text-2xl">More About Me</h1>
             {/* BIOGRAPHY DESC */}
