@@ -196,11 +196,11 @@ const AboutPage = () => {
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    02/2023 - 04/2024
+                    03/2021 - 01/2023
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Phantom Solutions
+                    Kycres Technologies
                   </div>
                 </div>
                 {/* CENTER */}
@@ -239,11 +239,11 @@ const AboutPage = () => {
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    03/2021 - 01/2023
+                    02/2023 - 04/2024
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Kycres Technologies
+                    Phantom Solutions
                   </div>
                 </div>
               </div>
