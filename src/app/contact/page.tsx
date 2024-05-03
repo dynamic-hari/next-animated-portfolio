@@ -41,6 +41,7 @@ const ContactPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
+      {/* Loader */}
       {isLoading && (
         <div className="absolute bg-white bg-opacity-40 z-10 h-full w-full flex items-center justify-center">
           <div className="flex items-center">
@@ -68,9 +69,10 @@ const ContactPage = () => {
           </div>
         </div>
       )}
+
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* TEXT CONTAINER */}
-        <div className="h-32 lg:h-full lg:w-1/2 flex items-center justify-center text-2xl lg:text-6xl md:text-4xl">
+        <div className=" h-14 lg:h-full lg:w-1/2 flex items-center justify-center text-xl lg:text-6xl md:text-4xl">
           <div>
             {text.split("").map((letter, index) => (
               <motion.span
@@ -103,7 +105,7 @@ const ContactPage = () => {
             }}
           >
             {() => (
-              <Form className="w-full bg-red-50 rounded-xl px-16 lg:px-24 md:px-16 py-12 lg:py-24 md:py-12">
+              <Form className="w-full bg-red-50 rounded-xl px-8 lg:px-24 md:px-16 py-8 lg:py-24 md:py-12">
                 <div className="flex flex-col gap-2 mb-3">
                   <span>Dear Hari Haran,</span>
                   <Field
@@ -111,7 +113,7 @@ const ContactPage = () => {
                     className="bg-transparent border-b-2 border-b-black outline-none resize-none lg:min-h-32 md:min-h-4"
                     as="textarea"
                     cols="30"
-                    rows="8"
+                    rows="2"
                   />
                   <ErrorMessage
                     component="a"
@@ -144,7 +146,7 @@ const ContactPage = () => {
                   />
                 </div>
 
-                <div className="pt-8">
+                <div className="pt-4 lg:pt-8 sm:pt-2">
                   <button
                     type="submit"
                     className="w-full bg-purple-200 rounded font-semibold text-gray-600 p-4"
@@ -152,29 +154,25 @@ const ContactPage = () => {
                     Send
                   </button>
                 </div>
-                <div className="pt-8">
-                  {success && (
-                    <span className="text-green-600 font-semibold">
-                      Your message has been sent successfully!
-                    </span>
-                  )}
-                  {error && (
-                    <span className="text-red-600 font-semibold">
-                      Something went wrong! Please try again later.
-                    </span>
-                  )}
-                </div>
+                {(success || error) && (
+                  <div className="pt-8 sm:pt-2">
+                    {success && (
+                      <span className="text-green-600 font-semibold">
+                        Your message has been sent successfully!
+                      </span>
+                    )}
+                    {error && (
+                      <span className="text-red-600 font-semibold">
+                        Something went wrong! Please try again later.
+                      </span>
+                    )}
+                  </div>
+                )}
               </Form>
             )}
           </Formik>
         </div>
       </div>
-      {/* Loader */}
-      {/* <div className="w-full h-full fixed top-0 left-0 bg-white opacity-1 z-80">
-        <div className="flex justify-center items-center mt-[50vh]">
-          <div className="fas fa-circle-notch fa-spin fa-5x text-violet-600 z-90"></div>
-        </div>
-      </div> */}
     </motion.div>
   );
 };
