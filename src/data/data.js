@@ -1,3 +1,5 @@
+export const YEARS_OF_EXPERIENCE = 3.2;
+
 export const skillsList = [
   { title: "React" },
   { title: "TypeScript" },
@@ -12,9 +14,10 @@ export const skillsList = [
   { title: "Gitlab" },
   { title: "Tailwind CSS" },
   { title: "SCSS" },
+  { title: "Formik" },
+  { title: "Chart.js" },
   { title: "MongoDB" },
   { title: "Node.js" },
-  { title: "Next.js" },
   { title: "Express.js" },
   { title: "Framer Motion" },
   { title: "Webpack" },
@@ -24,8 +27,7 @@ export const skillsList = [
 export const portfolioHeadLine =
   "Designing the Future, Crafting Immersive Digital Experiences";
 
-export const portfolioDescription =
-  "As an experienced software developer with over three years of proven success, I'm enthusiastic about joining forces with your team to leverage my expertise effectively.";
+export const portfolioDescription = `As an experienced software developer with over ${YEARS_OF_EXPERIENCE} years of proven success, I'm enthusiastic about joining forces with your team to leverage my expertise effectively.`;
 
 // export const portfolioDescription = "Welcome to my digital canvas, where innovation and creativity converge. With a keen eye for aesthetics and a mastery of code, my portfolio showcases a diverse collection of projects that reflect my commitment to excellence.";
 

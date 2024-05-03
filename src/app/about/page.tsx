@@ -3,7 +3,7 @@ import Brain from "@/components/Brain";
 import { motion, useInView, useScroll } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
-import { skillsList } from "../../data/data";
+import { skillsList, YEARS_OF_EXPERIENCE } from "../../data/data";
 import Link from "next/link";
 
 const AboutPage = () => {
@@ -43,7 +43,7 @@ const AboutPage = () => {
               rel="noopener noreferrer"
               download
             >
-              <p className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">
+              <p className="no-underline hover:underline text-blue-600 hover:text-blue-800 visited:text-purple-600">
                 Download Resume
               </p>
             </Link>
@@ -51,11 +51,12 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">More About Me</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-base">
-              I&apos;m Hari Haran, a passionate software developer with 3+ years
-              of experience crafting innovative applications. I developed an
-              interest in coding and taught myself how to code in my free time,
-              evolving into a self-taught Front End Developer specializing in
-              building dynamic user experiences using React.js.
+              I&apos;m Hari Haran, a passionate software developer with{" "}
+              {YEARS_OF_EXPERIENCE}+ years of experience crafting innovative
+              applications. I developed an interest in coding and taught myself
+              how to code in my free time, evolving into a self-taught Front End
+              Developer specializing in building dynamic user experiences using
+              React.js.
               <br />
               <br />
               I prioritize creating responsive, user-friendly interfaces with a
