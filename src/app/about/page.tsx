@@ -51,11 +51,11 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">More About Me</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-base">
-              I&apos;m Hari Haran, a passionate software developer with three
-              years of experience crafting innovative applications. I developed
-              an interest in coding and taught myself how to code in my free
-              time, evolving into a self-taught Front End Developer specializing
-              in building dynamic user experiences using React.js.
+              I&apos;m Hari Haran, a passionate software developer with 3+ years
+              of experience crafting innovative applications. I developed an
+              interest in coding and taught myself how to code in my free time,
+              evolving into a self-taught Front End Developer specializing in
+              building dynamic user experiences using React.js.
               <br />
               <br />
               I prioritize creating responsive, user-friendly interfaces with a
@@ -191,8 +191,8 @@ const AboutPage = () => {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I led web development, offering expertise in JavaScript
-                    frameworks.
+                    I spearheaded React-based application development,
+                    leveraging advanced skills.
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
@@ -234,8 +234,8 @@ const AboutPage = () => {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I spearheaded React-based application development,
-                    leveraging advanced skills.
+                    I led web development, offering expertise in JavaScript
+                    frameworks.
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
