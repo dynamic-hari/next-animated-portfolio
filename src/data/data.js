@@ -1,4 +1,4 @@
-export const YEARS_OF_EXPERIENCE = 3.2;
+export const YEARS_OF_EXPERIENCE = 4.5;
 
 export const skillsList = [
   { title: "React" },
